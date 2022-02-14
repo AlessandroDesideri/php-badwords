@@ -20,3 +20,5 @@
     <h2> La stringa censurata è lunga <?php echo strlen($censoredWord); ?></h2>
 </body>
 </html>
+
+<!-- ?word=parolacensurata -->
