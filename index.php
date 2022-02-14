@@ -1,6 +1,6 @@
 <?php
     $text = "Lorem ipsum dolor sit amet consectetur bip adipisicing elit. Similique a iste reprehenderit assumenda molestiae atque labore natus commodi dolores. Molestias alias quae dolores beatae assumenda, aperiam quo delectus expedita repellendus.";
-    $censored = $_GET["bip"];
+    $censored = $_GET["word"];
     $censoredWord = str_replace($censored, "*****", $text);
 ?>
 
