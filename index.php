@@ -12,5 +12,7 @@
 </head>
 <body>
     <h1> <?php echo $lorem; ?> </h1>
+    <h2> <?php strlen($lorem); ?></h2>
+ 
 </body>
 </html>
