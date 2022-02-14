@@ -1,5 +1,7 @@
 <?php
- $lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique a iste reprehenderit assumenda molestiae atque labore natus commodi dolores. Molestias alias quae dolores beatae assumenda, aperiam quo delectus expedita repellendus.";
+    $text = "Lorem ipsum dolor sit amet consectetur bip adipisicing elit. Similique a iste reprehenderit assumenda molestiae atque labore natus commodi dolores. Molestias alias quae dolores beatae assumenda, aperiam quo delectus expedita repellendus.";
+    $censored = $_GET["bip"];
+    $censoredWord = str_replace($censored, "*****", $text);
 ?>
 
 <!DOCTYPE html>
@@ -11,8 +13,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> <?php echo $lorem; ?> </h1>
-    <h2> <?php strlen($lorem); ?></h2>
- 
+    <h1> <?php echo $text; ?> </h1>
+    <br>
+    <h2> La stringa è lunga <?php echo strlen($text); ?> caratteri </h2>
+    <br>
+    <h2> La stringa censurata è lunga <?php echo strlen($censoredWord); ?></h2>
 </body>
 </html>
